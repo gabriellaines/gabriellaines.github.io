@@ -17,13 +17,13 @@
 
 ## About Me
 
-I'm a **Senior Angular Developer** from Brazil with **8+ years** building production-grade web applications end-to-end. My core expertise covers the full Angular ecosystem — TypeScript, RxJS, Angular Material, and Angular CLI — paired with a solid backend in Node.js and NestJS.
+I'm a **Senior Angular Developer** from Brazil with **8+ years** building web applications end-to-end. My core expertise covers the full Angular ecosystem — TypeScript, RxJS, Angular Material, and Angular CLI — paired with a backend in NestJS and Express, working regularly with TypeORM, Prisma, PostgreSQL, and Redis.
 
-My background spans **financial systems** and **biotech research platforms**, where I've architected reactive systems from scratch, developed complex RxJS pipelines, and led AngularJS-to-Angular migrations at scale.
+My background spans **financial systems** and **biotech research platforms**, where I've built reactive architectures, developed complex RxJS pipelines, and migrated AngularJS applications to modern Angular.
 
-- Primary stack: **Angular · TypeScript · RxJS · Node.js · NestJS**
+- Primary stack: **Angular · TypeScript · RxJS · NestJS · Node.js**
 - Available for **remote and global** opportunities
-- Languages: **Portuguese** (native) · **English** (C2 certified)
+- Fluent in **English** and **Portuguese**
 
 ---
 
@@ -43,18 +43,23 @@ My background spans **financial systems** and **biotech research platforms**, wh
 ![Node.js](https://img.shields.io/badge/node.js-161616?style=for-the-badge&logo=node.js&logoColor=42be65)
 ![NestJS](https://img.shields.io/badge/nestjs-161616?style=for-the-badge&logo=nestjs&logoColor=ff7eb6)
 ![Express](https://img.shields.io/badge/express-161616?style=for-the-badge&logo=express&logoColor=f4f4f4)
+![TypeORM](https://img.shields.io/badge/typeorm-161616?style=for-the-badge&logoColor=f4f4f4)
+![Prisma](https://img.shields.io/badge/prisma-161616?style=for-the-badge&logo=prisma&logoColor=f4f4f4)
 ![Kafka](https://img.shields.io/badge/kafka-161616?style=for-the-badge&logo=apachekafka&logoColor=f4f4f4)
 
 **Databases**
 
 ![PostgreSQL](https://img.shields.io/badge/postgresql-161616?style=for-the-badge&logo=postgresql&logoColor=33b1ff)
 ![MongoDB](https://img.shields.io/badge/mongodb-161616?style=for-the-badge&logo=mongodb&logoColor=42be65)
+![Redis](https://img.shields.io/badge/redis-161616?style=for-the-badge&logo=redis&logoColor=ff7eb6)
 ![DynamoDB](https://img.shields.io/badge/dynamodb-161616?style=for-the-badge&logo=amazondynamodb&logoColor=33b1ff)
 
 **Cloud & DevOps**
 
 ![AWS](https://img.shields.io/badge/aws-161616?style=for-the-badge&logo=amazonaws&logoColor=ffe97b)
 ![Docker](https://img.shields.io/badge/docker-161616?style=for-the-badge&logo=docker&logoColor=33b1ff)
+![Docker Compose](https://img.shields.io/badge/docker%20compose-161616?style=for-the-badge&logo=docker&logoColor=33b1ff)
+![Linux](https://img.shields.io/badge/linux-161616?style=for-the-badge&logo=linux&logoColor=ffe97b)
 ![Git](https://img.shields.io/badge/git-161616?style=for-the-badge&logo=git&logoColor=ff7eb6)
 
 **Testing**
