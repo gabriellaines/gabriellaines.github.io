@@ -17,13 +17,14 @@
 
 ## About Me
 
-I'm a **Senior Angular Developer** from Brazil with **8+ years** building web applications end-to-end. My core expertise covers the full Angular ecosystem — TypeScript, RxJS, Angular Material, and Angular CLI — paired with a backend in NestJS and Express, working regularly with TypeORM, Prisma, PostgreSQL, and Redis.
+I'm a **Senior Angular Developer** from Brazil with **8+ years** building web applications end-to-end. I specialize in the Angular ecosystem and backend development with NestJS, working across the full stack from reactive UIs to REST APIs backed by PostgreSQL, MongoDB, and Redis.
 
-My background spans **financial systems** and **biotech research platforms**, where I've built reactive architectures, developed complex RxJS pipelines, and migrated AngularJS applications to modern Angular.
+My background spans **financial systems** and **biotech research platforms** — building reactive architectures, developing complex RxJS pipelines, and migrating AngularJS applications to modern Angular.
 
-- Primary stack: **Angular · TypeScript · RxJS · NestJS · Node.js**
-- Available for **remote and global** opportunities
-- Fluent in **English** and **Portuguese**
+- Frontend: **Angular · TypeScript · RxJS · Angular Material**
+- Backend: **NestJS · Node.js · Express · TypeORM · Prisma**
+- Data & Infra: **PostgreSQL · MongoDB · Redis · Docker · Docker Compose · AWS**
+- Fluent in **English** and **Portuguese** · Open to remote and global opportunities
 
 ---
 
