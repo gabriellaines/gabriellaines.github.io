@@ -17,7 +17,7 @@
 
 ## About Me
 
-I'm a **Senior Angular Developer** from Brazil with **8+ years** building production-grade web applications end-to-end. Angular is my primary domain — and since TypeScript is mandatory in Angular, it's deeply embedded in how I design and write code daily.
+I'm a **Senior Angular Developer** from Brazil with **8+ years** building production-grade web applications end-to-end. My core expertise covers the full Angular ecosystem — TypeScript, RxJS, Angular Material, and Angular CLI — paired with a solid backend in Node.js and NestJS.
 
 My background spans **financial systems** and **biotech research platforms**, where I've architected reactive systems from scratch, developed complex RxJS pipelines, and led AngularJS-to-Angular migrations at scale.
 
