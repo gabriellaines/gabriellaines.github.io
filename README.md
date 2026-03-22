@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=1000&color=78A9FF&center=true&vCenter=true&width=520&lines=Angular+%2B+TypeScript+is+my+main+domain;NestJS+%7C+Node.js+%7C+RxJS;8%2B+years+building+web+applications;Open+to+global+%26+remote+roles)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=20&duration=3500&pause=1000&color=78A9FF&center=true&vCenter=true&width=520&lines=Angular+%7C+RxJS+%7C+HTML+%7C+CSS;NestJS+%7C+Node.js+%7C+RxJS;8%2B+years+building+web+applications;Open+to+global+%26+remote+roles)](https://git.io/typing-svg)
 
 <br/>
 
