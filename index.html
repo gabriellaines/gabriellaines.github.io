@@ -1,1 +1,389 @@
-<h1>Something cool will happen here!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Antonio Laines Sobral | Resume</title>
+  <meta name="description" content="Software Engineer specializing in Angular, Node.js, AWS, and Postgres." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --panel: #121827;
+      --panel-2: #0f172a;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --line: #263042;
+      --accent: #60a5fa;
+      --accent-2: #22c55e;
+      --chip: #172033;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0b0f19 0%, #0f172a 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 32px 20px 80px;
+    }
+
+    .hero {
+      background: rgba(18, 24, 39, 0.9);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: var(--accent-2);
+      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.08rem;
+      max-width: 760px;
+      margin-bottom: 22px;
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .chip {
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 22px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: rgba(18, 24, 39, 0.9);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 26px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 18px;
+    }
+
+    .section { margin-top: 22px; }
+
+    .experience-item + .experience-item {
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+      margin-top: 20px;
+    }
+
+    .role {
+      font-size: 1.06rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .company {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skills .chip {
+      border-radius: 12px;
+    }
+
+    .small-list p {
+      margin-bottom: 10px;
+    }
+
+    .case-study {
+      margin-top: 14px;
+      padding: 14px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      color: var(--muted);
+    }
+
+    .footer-note {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 24px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero,
+      .card {
+        padding: 22px;
+        border-radius: 20px;
+      }
+    }
+
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+
+      .hero, .card {
+        box-shadow: none;
+        background: white;
+        border-color: #d1d5db;
+      }
+
+      a {
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <span class="eyebrow">Software Engineer</span>
+      <h1>Gabriel Antonio Laines Sobral</h1>
+      <p class="subtitle">
+        Full-stack engineer with 8+ years of experience building scalable web applications using Angular and Node.js.
+        Strong track record of owning features end-to-end across fintech, HR, and biotech domains, with a current focus
+        on CMS-driven experiences that enable fast iteration and visual page composition.
+      </p>
+      <div class="contact">
+        <span class="chip">Taboão da Serra, São Paulo, Brazil</span>
+        <span class="chip">Remote</span>
+        <a class="chip" href="mailto:gabrielantonio20111@hotmail.com">gabrielantonio20111@hotmail.com</a>
+        <a class="chip" href="tel:+5511912141240">+55 11 91214-1240</a>
+        <span class="chip">English: C2 (EF SET)</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div>
+        <article class="card section">
+          <h2>Experience</h2>
+
+          <div class="experience-item">
+            <div class="role">Angular Developer <span class="company">— Torc</span></div>
+            <div class="meta">Jun 2025 – Present • Remote</div>
+            <ul>
+              <li>Building a CMS-driven platform enabling product teams to visually compose pages using dynamic Angular components.</li>
+              <li>Designed a flexible frontend architecture to render UI dynamically based on CMS configuration.</li>
+              <li>Enabled non-technical users, including product owners, to create and customize pages without developer involvement.</li>
+              <li>Developed reusable and highly customizable UI components to accelerate product iteration.</li>
+              <li>Integrated Angular applications with CMS workflows in a Contentful-style setup.</li>
+              <li>Enabled faster page creation by decoupling content management from frontend deployments.</li>
+              <li>Improved iteration speed by allowing dynamic UI updates without requiring code changes.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Angular Developer <span class="company">— BTG Pactual (via ACT Digital)</span></div>
+            <div class="meta">May 2025 – Jun 2025 • São Paulo, Brazil</div>
+            <ul>
+              <li>Contributed to development of financial systems using Angular and Node.js.</li>
+              <li>Built high-performance UI for banking workflows.</li>
+              <li>Collaborated with cross-functional teams in a fintech environment.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Software Development Engineer <span class="company">— Moderna (via ACT Digital)</span></div>
+            <div class="meta">Feb 2023 – Apr 2025 • Boston, Massachusetts, United States</div>
+            <ul>
+              <li>Owned development of a full-stack application supporting complex research workflows using Angular, Node.js, and PostgreSQL.</li>
+              <li>Led migration of legacy AngularJS applications to modern Angular architecture.</li>
+              <li>Designed APIs and data flows for real-time data processing and visualization.</li>
+              <li>Built advanced RxJS pipelines to handle complex asynchronous data streams.</li>
+              <li>Improved system performance, maintainability, and scalability across the platform.</li>
+              <li>Collaborated with product and research teams to deliver intuitive, high-impact tools.</li>
+            </ul>
+            <div class="case-study">
+              <strong>Impact:</strong> Contributed to modernization work that improved performance by around 30% and user productivity by around 50%, while strengthening stability and security for a mission-critical biotech platform.
+              <br /><br />
+              <a href="https://actdigital.com/pt/cases/modernizacao-em-sistema-legado-gera-eficiencia-e-seguranca-para-industria-farmaceutica/" target="_blank" rel="noopener noreferrer">View ACT Digital case study</a>
+            </div>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Senior Software Engineer <span class="company">— Stefanini</span></div>
+            <div class="meta">Oct 2022 – Mar 2023</div>
+            <ul>
+              <li>Developed financial applications using Angular, Node.js, and Java (Spring Boot).</li>
+              <li>Built event-driven systems using Kafka.</li>
+              <li>Designed secure APIs for handling sensitive financial data.</li>
+              <li>Worked with AWS for deployment and infrastructure.</li>
+              <li>Ensured code quality through comprehensive testing using Jest, Jasmine, Karma, Mocha, and Chai.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Software Engineer <span class="company">— Be IT</span></div>
+            <div class="meta">Apr 2022 – Oct 2022</div>
+            <ul>
+              <li>Led modernization of an HR platform, improving scalability and performance.</li>
+              <li>Made architectural decisions impacting system design and long-term maintainability.</li>
+              <li>Built backend services using Node.js and integrated them with Angular frontend.</li>
+              <li>Migrated database to DynamoDB for improved performance and scalability.</li>
+              <li>Designed and deployed infrastructure using AWS, including Lambda, API Gateway, and CloudFormation.</li>
+              <li>Improved CI/CD pipelines and deployment processes.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Software Engineer <span class="company">— Gupy</span></div>
+            <div class="meta">Nov 2021 – Jun 2022</div>
+            <ul>
+              <li>Developed features for an ATS platform using Node.js, React, PostgreSQL, and AWS.</li>
+              <li>Improved user experience and data consistency for candidate management workflows.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Software Engineer <span class="company">— IBM (Santander Project)</span></div>
+            <div class="meta">Jun 2020 – Oct 2021</div>
+            <ul>
+              <li>Built and maintained banking applications using Angular, Node.js, and Java.</li>
+              <li>Ensured secure and compliant data handling in financial systems.</li>
+            </ul>
+          </div>
+
+          <div class="experience-item">
+            <div class="role">Earlier Experience</div>
+            <div class="meta">Ericsson • Indigosoft • Automate Brasil • All Net Group</div>
+            <ul>
+              <li>Worked across full-stack and frontend development roles using Angular, Node.js, React, Java, HTML, CSS, and JavaScript.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <article class="card section">
+          <h2>Profile</h2>
+          <p>
+            Software Engineer focused on Angular, Node.js, AWS, and Postgres, with strong experience building maintainable products, modernizing legacy systems, and improving developer and product team velocity.
+          </p>
+        </article>
+
+        <article class="card section">
+          <h2>Key Project</h2>
+          <div class="small-list">
+            <p><strong>CMS-driven Dynamic UI Platform</strong></p>
+            <p>Designed a system where Angular components are rendered dynamically based on CMS configuration.</p>
+            <p>Enabled visual page composition for product teams without code changes.</p>
+            <p>Reduced dependency on engineering for content updates and improved reuse through component-driven architecture.</p>
+          </div>
+        </article>
+
+        <article class="card section">
+          <h2>Tech Stack</h2>
+          <div class="skills">
+            <span class="chip">Angular</span>
+            <span class="chip">RxJS</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">NestJS</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">DynamoDB</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Kafka</span>
+            <span class="chip">Jest</span>
+            <span class="chip">Jasmine</span>
+            <span class="chip">Karma</span>
+            <span class="chip">Mocha</span>
+            <span class="chip">Chai</span>
+          </div>
+        </article>
+
+        <article class="card section">
+          <h2>Education</h2>
+          <p><strong>Associate Degree in Systems Analysis and Development</strong><br />FIAP — Business School<br />2024 – 2026</p>
+        </article>
+
+        <article class="card section">
+          <h2>Certifications</h2>
+          <ul>
+            <li>English Proficiency — EF SET (C2)</li>
+            <li>Angular Development</li>
+            <li>Node.js</li>
+            <li>BPMN 2.0</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <p class="footer-note">Built as an editable HTML resume page that can also be adapted for PDF export.</p>
+  </main>
+</body>
+</html>
