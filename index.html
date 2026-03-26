@@ -326,6 +326,47 @@
       margin-top: 18px;
     }
 
+    /* RECOMMENDATIONS */
+    .rec {
+      padding: 16px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--ul-color);
+    }
+
+    .rec + .rec { margin-top: 12px; }
+
+    .rec-quote {
+      font-style: italic;
+      margin: 0 0 12px;
+    }
+
+    .rec-author {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .rec-author strong {
+      color: var(--text);
+      font-style: normal;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.82rem;
+    }
+
+    .rec-link {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      margin-top: 8px;
+      display: inline-block;
+    }
+
     /* EARLIER */
     .earlier {
       font-size: 0.88rem;
@@ -384,7 +425,7 @@
       </p>
       <div class="contact">
         <span class="chip">Taboão da Serra, SP — Remote</span>
-        <span class="chip">gabrielantonio20111@hotmail.com</span>
+        <a class="chip" href="/cdn-cgi/l/email-protection#45222427372c2029242b312a2b2c2a7775747474052d2a3128242c296b262a28"><span class="__cf_email__" data-cfemail="c7a0a6a5b5aea2aba6a9b3a8a9aea8f5f7f6f6f687afa8b3aaa6aeabe9a4a8aa">[email&#160;protected]</span></a>
         <a class="chip" href="tel:+5511912141240">+55 11 91214-1240</a>
         <span class="chip">English C2 — EF SET</span>
         <a class="chip" href="https://github.com/gabriellaines" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -552,9 +593,28 @@
             <span class="chip">BPMN 2.0</span>
           </div>
         </article>
-      </div>
+        <article class="card section">
+          <h2>Recommendations</h2>
 
-    </div>
+          <div class="rec">
+            <p class="rec-quote">"Gabriel was one of our key engineers and a truly solid, dependable force on the front-end team. His solid work on refactoring core components significantly improved maintainability, reusability, and scalability for the entire platform."</p>
+            <div class="rec-author">
+              <strong>Eugene Firdman</strong>
+              Engineering Manager · TELUS Digital
+            </div>
+            <a class="rec-link" href="https://www.linkedin.com/in/gabriel-alves-dev/" target="_blank" rel="noopener noreferrer">→ Read on LinkedIn</a>
+          </div>
+
+          <div class="rec">
+            <p class="rec-quote">"He has a unique talent for translating complex requirements into robust, scalable, and user-friendly software. His expertise in Angular, Node.js, and reactive programming with RxJS was invaluable to our success."</p>
+            <div class="rec-author">
+              <strong>Tito Simões</strong>
+              COO · ACT Digital
+            </div>
+            <a class="rec-link" href="https://www.linkedin.com/in/gabriel-alves-dev/" target="_blank" rel="noopener noreferrer">→ Read on LinkedIn</a>
+          </div>
+        </article>
+      </div>
 
     <p class="footer-note">gabriellaines.github.io</p>
 
