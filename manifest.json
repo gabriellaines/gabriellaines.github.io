@@ -1,0 +1,17 @@
+{
+  "name": "Gabriel Antonio Laines Sobral | Portfolio",
+  "short_name": "Gabriel Laines",
+  "description": "Senior Software Engineer Portfolio - Angular, TypeScript, Node.js, NestJS, and AWS.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#080c14",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "./favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

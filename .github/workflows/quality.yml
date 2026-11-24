@@ -1,0 +1,28 @@
+name: Quality and Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install HTMLHint
+        run: npm install -g htmlhint
+
+      - name: Validate HTML structure
+        run: htmlhint index.html --rules="tagname-lowercase,attr-lowercase,attr-value-double-quotes,doctype-first,tag-pair,spec-char-escape,id-unique,src-not-empty,title-require"
+
+      - name: Verify Web Manifest
+        run: node -e "JSON.parse(require('fs').readFileSync('manifest.json', 'utf8')); console.log('manifest.json is valid JSON');"

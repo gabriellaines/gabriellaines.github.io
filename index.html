@@ -10,10 +10,39 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gabriellaines.github.io/" />
   <meta property="og:title" content="Gabriel Antonio Laines Sobral | Full-Stack & Angular Software Engineer" />
-  <meta property="og:description" content="Full-stack engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
-  <meta name="twitter:card" content="summary" />
+  <meta property="og:description" content="Senior Software Engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
+  <meta property="og:image" content="https://gabriellaines.github.io/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Gabriel Antonio Laines Sobral | Full-Stack & Angular Software Engineer" />
-  <meta name="twitter:description" content="Full-stack engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
+  <meta name="twitter:description" content="Senior Software Engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
+  <meta name="twitter:image" content="https://gabriellaines.github.io/og-image.svg" />
+
+  <!-- Favicon & PWA -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="favicon.svg" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Gabriel Antonio Laines Sobral",
+    "jobTitle": "Senior Software Engineer",
+    "url": "https://gabriellaines.github.io/",
+    "sameAs": [
+      "https://github.com/gabriellaines",
+      "https://www.linkedin.com/in/gabriel-alves-dev/"
+    ],
+    "knowsAbout": ["Angular", "TypeScript", "Node.js", "NestJS", "AWS", "RxJS", "Software Architecture"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressCountry": "BR"
+    }
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
@@ -232,9 +261,55 @@
       transition: border-color 0.2s, background 0.3s, color 0.3s;
     }
 
-    a.chip:hover {
+    .copy-chip {
+      cursor: pointer;
+      user-select: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .copy-chip:hover {
       border-color: var(--accent);
       text-decoration: none;
+    }
+
+    .copy-badge {
+      font-size: 0.72rem;
+      background: rgba(37,99,235,0.12);
+      color: var(--accent);
+      padding: 1px 6px;
+      border-radius: 999px;
+      margin-left: 2px;
+      transition: all 0.2s;
+    }
+
+    /* TOAST */
+    .toast {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: var(--panel);
+      color: var(--text);
+      border: 1px solid var(--accent);
+      border-radius: 10px;
+      padding: 10px 16px;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.82rem;
+      box-shadow: var(--shadow-hero);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
     /* LAYOUT */
@@ -502,7 +577,10 @@
       </p>
       <div class="contact">
         <span class="chip">📍 São Paulo, Brazil — Remote</span>
-        <a class="chip" href="mailto:gabrielantoniolaines@gmail.com">✉️ gabrielantoniolaines@gmail.com</a>
+        <button class="chip copy-chip" onclick="copyEmail(this)" aria-label="Copy email address" title="Click to copy email">
+          <span>✉️ gabrielantoniolaines@gmail.com</span>
+          <span class="copy-badge">copy</span>
+        </button>
         <span class="chip">🌐 English C2 (Proficient) — EF SET</span>
         <a class="chip" href="https://github.com/gabriellaines" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
         <a class="chip" href="https://www.linkedin.com/in/gabriel-alves-dev/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
@@ -736,7 +814,38 @@
   </main>
   </div>
 
+  <div id="toast" class="toast" role="status" aria-live="polite">
+    <span>✅</span>
+    <span id="toastMsg">Copied email to clipboard!</span>
+  </div>
+
   <script>
+    function copyEmail(button) {
+      const email = 'gabrielantoniolaines@gmail.com';
+      navigator.clipboard.writeText(email).then(() => {
+        const badge = button.querySelector('.copy-badge');
+        if (badge) badge.textContent = 'copied!';
+        showToast('Email copied to clipboard!');
+        setTimeout(() => {
+          if (badge) badge.textContent = 'copy';
+        }, 2500);
+      }).catch(() => {
+        // Fallback
+        window.location.href = 'mailto:' + email;
+      });
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      if (!toast || !toastMsg) return;
+      toastMsg.textContent = text;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
+    }
+
     function applyTheme(theme) {
       const isDark = theme === 'dark';
       document.documentElement.classList.toggle('dark', isDark);

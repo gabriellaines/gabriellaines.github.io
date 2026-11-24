@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080c14" />
+      <stop offset="50%" stop-color="#0e1420" />
+      <stop offset="100%" stop-color="#05101e" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="50%" stop-color="#60a5fa" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M 48 0 L 0 0 0 48" fill="none" stroke="rgba(59, 130, 246, 0.07)" stroke-width="1" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- Outer Glowing Border -->
+  <rect x="30" y="30" width="1140" height="570" rx="24" fill="none" stroke="rgba(59, 130, 246, 0.2)" stroke-width="2" />
+
+  <!-- Monogram Badge -->
+  <rect x="80" y="90" width="72" height="72" rx="18" fill="#111927" stroke="rgba(59, 130, 246, 0.4)" stroke-width="2" />
+  <text x="116" y="136" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="800" font-size="28" fill="#60a5fa" text-anchor="middle">&lt;GL/&gt;</text>
+
+  <!-- Role Eyebrow -->
+  <text x="175" y="132" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="700" font-size="20" fill="#10b981" letter-spacing="2">SENIOR SOFTWARE ENGINEER · FULL-STACK &amp; FRONTEND</text>
+
+  <!-- Name -->
+  <text x="80" y="240" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="800" font-size="56" fill="#f8fafc" letter-spacing="-1">Gabriel Antonio Laines Sobral</text>
+
+  <!-- Subtitle Summary -->
+  <text x="80" y="305" font-family="sans-serif" font-weight="400" font-size="24" fill="#94a3b8">
+    8+ years designing high-impact web apps across fintech, HR, and biotech domains.
+  </text>
+  <text x="80" y="345" font-family="sans-serif" font-weight="400" font-size="24" fill="#94a3b8">
+    Specialized in scalable architecture, performance, dynamic CMS, and clean code.
+  </text>
+
+  <!-- Tech Stack Chips -->
+  <g transform="translate(80, 420)">
+    <!-- Chip 1: Angular -->
+    <rect x="0" y="0" width="150" height="48" rx="24" fill="#111927" stroke="rgba(239, 68, 68, 0.4)" stroke-width="1.5" />
+    <text x="75" y="30" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="600" font-size="19" fill="#f87171" text-anchor="middle">Angular</text>
+
+    <!-- Chip 2: TypeScript -->
+    <rect x="165" y="0" width="175" height="48" rx="24" fill="#111927" stroke="rgba(59, 130, 246, 0.4)" stroke-width="1.5" />
+    <text x="252" y="30" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="600" font-size="19" fill="#60a5fa" text-anchor="middle">TypeScript</text>
+
+    <!-- Chip 3: Node.js / NestJS -->
+    <rect x="355" y="0" width="225" height="48" rx="24" fill="#111927" stroke="rgba(16, 185, 129, 0.4)" stroke-width="1.5" />
+    <text x="467" y="30" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="600" font-size="19" fill="#34d399" text-anchor="middle">Node.js · NestJS</text>
+
+    <!-- Chip 4: AWS & Cloud -->
+    <rect x="595" y="0" width="185" height="48" rx="24" fill="#111927" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1.5" />
+    <text x="687" y="30" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="600" font-size="19" fill="#fbbf24" text-anchor="middle">AWS Cloud</text>
+
+    <!-- Chip 5: RxJS -->
+    <rect x="795" y="0" width="140" height="48" rx="24" fill="#111927" stroke="rgba(236, 72, 153, 0.4)" stroke-width="1.5" />
+    <text x="865" y="30" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="600" font-size="19" fill="#f472b6" text-anchor="middle">RxJS</text>
+  </g>
+
+  <!-- Bottom Details Bar -->
+  <g transform="translate(80, 530)">
+    <text x="0" y="0" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="500" font-size="18" fill="#64748b">gabriellaines.github.io</text>
+    <text x="320" y="0" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="500" font-size="18" fill="#64748b">📍 São Paulo, Brazil (Remote)</text>
+    <text x="720" y="0" font-family="'JetBrains Mono', monospace, sans-serif" font-weight="500" font-size="18" fill="#64748b">🌐 EF SET C2 Proficient</text>
+  </g>
+</svg>
