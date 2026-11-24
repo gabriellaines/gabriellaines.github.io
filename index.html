@@ -3,8 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gabriel Antonio Laines Sobral | Resume</title>
-  <meta name="description" content="Software Engineer specializing in Angular, Node.js, AWS, and Postgres." />
+  <title>Gabriel Antonio Laines Sobral | Full-Stack & Angular Software Engineer</title>
+  <meta name="description" content="Senior Software Engineer specializing in Angular, TypeScript, Node.js, NestJS, and AWS. 8+ years building high-impact enterprise applications." />
+  
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://gabriellaines.github.io/" />
+  <meta property="og:title" content="Gabriel Antonio Laines Sobral | Full-Stack & Angular Software Engineer" />
+  <meta property="og:description" content="Full-stack engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Gabriel Antonio Laines Sobral | Full-Stack & Angular Software Engineer" />
+  <meta name="twitter:description" content="Full-stack engineer with 8+ years of experience in Angular, Node.js, and AWS across biotech, HR, and fintech." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
   <style>
@@ -87,13 +97,38 @@
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* TOGGLE */
+    /* TOGGLE & ACTIONS */
     .topbar {
       position: relative;
       z-index: 10;
       display: flex;
       justify-content: flex-end;
+      align-items: center;
+      gap: 10px;
       margin-bottom: 20px;
+    }
+
+    .topbar-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 6px 14px;
+      cursor: pointer;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+      transition: all 0.2s;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+    }
+
+    .topbar-btn:hover {
+      border-color: var(--accent);
+      color: var(--text);
+      text-decoration: none;
     }
 
     .theme-toggle {
@@ -300,15 +335,47 @@
     }
 
     /* SKILLS */
+    .skills-group {
+      margin-bottom: 16px;
+    }
+
+    .skills-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .skills-category {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.76rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
     .skills {
       display: flex;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: 7px;
     }
 
     .skills .chip {
-      border-radius: 10px;
-      font-size: 0.82rem;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      padding: 4px 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: 'DM Mono', monospace;
+      font-size: 0.72rem;
+      padding: 2px 8px;
+      border-radius: 6px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      color: var(--muted);
+      margin-right: 4px;
+      margin-top: 6px;
     }
 
     /* PROJECTS */
@@ -401,15 +468,25 @@
     @media print {
       body { background: white; color: black; }
       body::before { display: none; }
-      .hero, .card { box-shadow: none; background: white; border-color: #d1d5db; }
-      a { color: black; }
+      .topbar { display: none; }
+      .hero, .card { box-shadow: none; background: white; border-color: #d1d5db; break-inside: avoid; }
+      a { color: black; text-decoration: none; }
+      .wrap { padding: 0; max-width: 100%; }
+      .grid { display: block; }
+      .card.section { margin-top: 14px; padding: 18px; }
+      .impact { background: #f9fafb; border-color: #e5e7eb; }
+      .rec { background: #f9fafb; border-color: #e5e7eb; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="topbar">
-      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn">
+      <button class="topbar-btn" onclick="window.print()" title="Print or save as PDF">
+        <span>📄</span>
+        <span>Save / Print PDF</span>
+      </button>
+      <button class="theme-toggle" onclick="toggleTheme()" id="themeBtn" aria-label="Toggle theme">
         <span class="toggle-icon">🌙</span>
         <span id="themeLabel">Dark mode</span>
       </button>
@@ -418,18 +495,17 @@
   <main>
 
     <section class="hero">
-      <span class="eyebrow">Software Engineer</span>
+      <span class="eyebrow">Senior Software Engineer · Full-Stack & Frontend</span>
       <h1>Gabriel Antonio Laines Sobral</h1>
       <p class="subtitle">
-        Full-stack engineer with 8+ years of experience building scalable applications using Angular, Node.js, and NestJS across fintech, HR, and biotech domains. Strong track record of owning features end-to-end and delivering systems people actually use. Currently focused on CMS-driven platforms that improve iteration speed and reduce dependency on engineering teams.
+        Full-stack engineer with 8+ years of experience engineering robust web applications using Angular, TypeScript, Node.js, and NestJS across fintech, HR, and biotech domains. Strong track record of owning features end-to-end, modernizing complex legacy architectures, and designing dynamic CMS-driven platforms that accelerate product delivery.
       </p>
       <div class="contact">
-        <span class="chip">Taboão da Serra, SP — Remote</span>
-        <span class="chip">gabrielantonio20111@hotmail.com</span>
-        <a class="chip" href="tel:+5511912141240">+55 11 91214-1240</a>
-        <span class="chip">English C2 — EF SET</span>
-        <a class="chip" href="https://github.com/gabriellaines" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a class="chip" href="https://www.linkedin.com/in/gabriel-alves-dev/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="chip">📍 São Paulo, Brazil — Remote</span>
+        <a class="chip" href="mailto:gabrielantoniolaines@gmail.com">✉️ gabrielantoniolaines@gmail.com</a>
+        <span class="chip">🌐 English C2 (Proficient) — EF SET</span>
+        <a class="chip" href="https://github.com/gabriellaines" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="chip" href="https://www.linkedin.com/in/gabriel-alves-dev/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
       </div>
     </section>
 
@@ -538,43 +614,82 @@
 
           <div class="project">
             <div class="project-title">CMS-driven Dynamic UI Platform</div>
+            <div style="margin-bottom: 8px;">
+              <span class="badge">Angular</span>
+              <span class="badge">TypeScript</span>
+              <span class="badge">Dynamic Components</span>
+              <span class="badge">CMS Architecture</span>
+            </div>
             <ul>
-              <li>Built a system where Angular components are rendered dynamically via CMS.</li>
-              <li>Enabled visual page composition without code changes.</li>
-              <li>Improved product iteration speed.</li>
+              <li>Designed and built a runtime component registry mapping JSON/CMS schemas directly to Angular components.</li>
+              <li>Enabled non-technical product teams to visually assemble landing pages without frontend deployments.</li>
+              <li>Significantly shortened release turnaround time and improved engineering focus on core platform capabilities.</li>
             </ul>
           </div>
 
           <div class="project">
             <div class="project-title">Legacy System Modernization — Moderna</div>
+            <div style="margin-bottom: 8px;">
+              <span class="badge">Angular</span>
+              <span class="badge">RxJS</span>
+              <span class="badge">Node.js</span>
+              <span class="badge">PostgreSQL</span>
+              <span class="badge">WebSockets</span>
+            </div>
             <ul>
-              <li>Migrated large AngularJS application to modern Angular.</li>
-              <li>Improved performance, scalability, and maintainability.</li>
-              <li>Supported complex real-time data workflows.</li>
+              <li>Led end-to-end migration of mission-critical biotech research platform from legacy AngularJS to modern Angular.</li>
+              <li>Engineered reactive RxJS data streams and backend real-time flows, yielding ~30% faster UI performance and ~50% team productivity gains.</li>
             </ul>
           </div>
         </article>
 
         <article class="card section">
           <h2>Tech Stack</h2>
-          <div class="skills">
-            <span class="chip">Angular</span>
-            <span class="chip">RxJS</span>
-            <span class="chip">TypeScript</span>
-            <span class="chip">Node.js</span>
-            <span class="chip">NestJS</span>
-            <span class="chip">PostgreSQL</span>
-            <span class="chip">AWS</span>
-            <span class="chip">React</span>
-            <span class="chip">MongoDB</span>
-            <span class="chip">DynamoDB</span>
-            <span class="chip">Kafka</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Jest</span>
-            <span class="chip">Jasmine</span>
-            <span class="chip">Karma</span>
-            <span class="chip">Mocha</span>
-            <span class="chip">Chai</span>
+          
+          <div class="skills-group">
+            <div class="skills-category">Frontend</div>
+            <div class="skills">
+              <span class="chip">Angular</span>
+              <span class="chip">RxJS</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">React</span>
+              <span class="chip">HTML5 / CSS3</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <div class="skills-category">Backend & APIs</div>
+            <div class="skills">
+              <span class="chip">Node.js</span>
+              <span class="chip">NestJS</span>
+              <span class="chip">Java</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">Kafka</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <div class="skills-category">Cloud, Data & DevOps</div>
+            <div class="skills">
+              <span class="chip">AWS</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">DynamoDB</span>
+              <span class="chip">MongoDB</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Git / CI/CD</span>
+            </div>
+          </div>
+
+          <div class="skills-group">
+            <div class="skills-category">Testing & Quality</div>
+            <div class="skills">
+              <span class="chip">Jest</span>
+              <span class="chip">Jasmine</span>
+              <span class="chip">Karma</span>
+              <span class="chip">Mocha</span>
+              <span class="chip">Chai</span>
+            </div>
           </div>
         </article>
 
@@ -616,25 +731,37 @@
         </article>
       </div>
 
-    <p class="footer-note">gabriellaines.github.io</p>
+    <p class="footer-note">gabriellaines.github.io · Designed for speed, accessibility, and clean architecture.</p>
 
   </main>
   </div>
 
-  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-    function toggleTheme() {
-      const isDark = document.documentElement.classList.toggle('dark');
-      document.getElementById('themeLabel').textContent = isDark ? 'Light mode' : 'Dark mode';
-      document.querySelector('.toggle-icon').textContent = isDark ? '☀️' : '🌙';
-      localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  <script>
+    function applyTheme(theme) {
+      const isDark = theme === 'dark';
+      document.documentElement.classList.toggle('dark', isDark);
+      const label = document.getElementById('themeLabel');
+      const icon = document.querySelector('.toggle-icon');
+      if (label) label.textContent = isDark ? 'Light mode' : 'Dark mode';
+      if (icon) icon.textContent = isDark ? '☀️' : '🌙';
     }
 
-    // Restore saved preference
-    if (localStorage.getItem('theme') === 'dark') {
-      document.documentElement.classList.add('dark');
-      document.getElementById('themeLabel').textContent = 'Light mode';
-      document.querySelector('.toggle-icon').textContent = '☀️';
+    function toggleTheme() {
+      const isDark = document.documentElement.classList.toggle('dark');
+      const chosenTheme = isDark ? 'dark' : 'light';
+      localStorage.setItem('theme', chosenTheme);
+      applyTheme(chosenTheme);
     }
+
+    // Initialize theme based on preference or system settings
+    (function initTheme() {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        applyTheme(savedTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        applyTheme('dark');
+      }
+    })();
   </script>
 </body>
 </html>
